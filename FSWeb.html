@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Pictures/FSIcon.png" type="image/png">
+    <link rel="stylesheet" href="FSWebStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="FSWebJS.js"></script>
+    <title>JUNGLE</title>
+</head>
+<body>
+    <div id="main-background">
+        <header>
+            <div class="header-container">
+                <p class="logo">JUNGLE</p>
+                <nav class="header-menu-container">
+                    <a class="header-menu" href="#">Home</a>
+                    <a class="header-menu" href="#">Shops</a>
+                    <a class="header-menu" href="#">Catalog</a>
+                    <a class="header-menu" href="#">About</a>
+                    <a class="header-menu" href="#">Contact</a>
+                </nav>
+                <div class="search-and-basket-container">
+                    <div class="search-container" onclick="openSearch()"><img class="img-header" src="Pictures\search.png" alt="Search"></div>
+                    <div class="basket-container">
+                        <img class="img-header" src="Pictures\basket.png" alt="Basket">
+                        <div class="basket-menu-container"></div>
+                    </div>
+                </div>
+            </div>
+            <nav class="small-header-menu-container">
+                <a class="header-menu" href="#">Home</a>
+                <a class="header-menu" href="#">Shops</a>
+                <a class="header-menu" href="#">Catalog</a>
+                <a class="header-menu" href="#">About</a>
+                <a class="header-menu" href="#">Contact</a>
+            </nav>
+        </header>
+        <section class="main-text-on-background-container">
+            <p class="header-main-text-on-background">2020 summer<br>trend</p>
+            <p class="flower-collection-name">Pleasure</p>
+            <a class="button-shop-now" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Shop now
+            </a>
+        </section>
+    </div>
+    <section id="popup-serch-container" onclick="close()" style="display: none;">
+        <img id="cansel-img-search" onclick="closeSearch()" src="Pictures\cansel.png" alt="Cansel">
+        <div id="popup-serch">
+            <input id="serch-text" maxlength="100" type="text" placeholder="Введите поисковый запрос">
+            <div id="popup-search-text-clean-container" onclick="cleanSearchText()"><img id="popup-search-text-clean" src="Pictures\close.png" alt="Clean"></div>
+            <button id="button-popup-serch-img"><img id="popup-search-img" src="Pictures\search.png" alt="Search"></button>
+        </div> 
+    </section>
+    <section id = "navigation-section">
+        <div class="navigation-hovering-container">
+            <div id="first-section">
+                <img id="navigation-section-img" src="Pictures\purchases.png" alt="Number of purchases">
+                <p>Sales per year</p>
+            </div>
+            <p id="navigation-menu-after-hovering" >More than<br>1 million items</p>
+        </div>
+        <div class="navigation-hovering-container">
+            <div id="first-section">
+                <img id="navigation-section-img"  src="Pictures\time.png" alt="Working hours">
+                <p>Working hours</p>
+            </div>
+            <p id="navigation-menu-after-hovering">From 10 am<br> to 10 pm</p>
+        </div>
+        <div class="navigation-hovering-container">
+            <div id="first-section">
+                <img id="img-world" src="Pictures\world.png" alt="Collaborating countries">
+                <p>Cooperating<br>countries</p>
+            </div>
+            <p id="navigation-menu-after-hovering">Over 20 countries<br>around the world</p>
+        </div>
+        <div class="navigation-hovering-container">
+            <div id="first-section">
+                <img id="navigation-section-img"  src="Pictures\money.png" alt="Price range">
+                <p>Price range</p>
+            </div>
+            <p id="navigation-menu-after-hovering">From 20&#36;<br> to 1000&#36;</p>
+        </div>
+        <div class="navigation-hovering-container">
+            <div id="first-section">
+                <img id="navigation-section-img"  src="Pictures\shop.png" alt="Number of stores">
+                <p>Number of stores</p>
+            </div>
+            <p id="navigation-menu-after-hovering">We have more<br>than 50 stores</p>
+        </div>
+    </section>  
+    <section class="flowers-slider">
+        <div class="flowers-slider-wrapper">
+            <div class="flowers-slider-item"><img src="Pictures\flowersFon.jpg"></div>
+            <div class="flowers-slider-item"><img src="Pictures\flowersFon2.jpg"></div>
+            <div class="flowers-slider-item"><img src="Pictures\flowersFon3.jpg"></div>
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+    </section>
+    <section class="short-story-about-shop-container">
+        <h2>Our short story</h2>
+        <p class="story-about-shop-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo.<br> Nemo enim 
+            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.<p class="story-about-shop-text">But I 
+            must explain to you how all this mistaken idea of denouncing pleasure and 
+            praising pain was born and I will give you a complete account of the system, 
+            and expound the actual teachings of the great explorer of the truth, the 
+            master-builder of human happiness.</p> <p class="story-about-shop-text">No one rejects, dislikes, or avoids pleasure 
+            itself, because it is pleasure, but because those who do not know how to pursue 
+            pleasure rationally encounter consequences that are extremely painful.</p>
+        </p>
+        <a class="button-about-us" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            About us
+        </a>    
+    </section>
+    <footer>
+        <p class="footer-text-logo">JUNGLE</p>
+        <p class="footer-text-about-shop">Flower and Houseplant Shop</p>
+        <nav class="links-container">
+            <a><img class="footer-links" src="Pictures\vk.png" alt="vk"></a>
+            <a><img class="footer-links" src="Pictures\facebook.png" alt="facebook"></a>
+            <a><img class="footer-links" src="Pictures\instagramm.png" alt="instagramm"></a>
+            <a><img class="footer-links" src="Pictures\twitter.png" alt="twitter"></a>
+        </nav>
+    </footer>
+</body>
+</html>
